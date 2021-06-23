@@ -19,11 +19,12 @@ class Item(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(100), nullable=False)
     price = db.Column(db.Integer, nullable=False)
+    text = db.Column(db.String(100), nullable=False)
     isActive = db.Column(db.Boolean, default=True)
-    #text = db.Column(db.Text, nullable=False)
+
 
     def __repr__(self):
-         return self.title
+         return self.title, self.text
 
 
 @app.route('/')
@@ -34,7 +35,7 @@ def index():
 
 @app.route('/about')
 def about():
-    return render_template('about.html')\
+    return render_template('about.html')
 
 
 @app.route('/buy/<int:id>')
@@ -56,13 +57,13 @@ def item_buy(id):
 def create():
     if request.method == "POST":
         title = request.form['title']
-        #text = request.form['text']
+        text = request.form['text']
         price = request.form['price']
 
-        item = Item(title=title, price=price) #text=text)
+        item = Item(title=title, text=text, price=price)
 
         try:
-            db.session.add(Item)
+            db.session.add(item)
             db.session.commit()
             return redirect('/')
         except:

@@ -1,0 +1,138 @@
+# Байт-скомпилированные / оптимизированные / DLL-файлы
+__pycache__/
+*.py[треска]
+*$py.class
+
+ Расширения # C
+*.итак
+
+# Дистрибуция / упаковка
+.Питон
+сборка/
+развиваются-яйца/
+dist/
+загрузки/
+яйца/
+.яйца/
+lib/
+lib64/
+детали/
+sdist/
+var/
+колеса/
+share/python-wheels/
+*.яйцо-информация/
+.установленный.cfg
+*.яйцо
+МАНИФЕСТ
+
+# PyInstaller
+# Обычно эти файлы пишутся скриптом python из шаблона
+# перед тем, как PyInstaller соберет exe-файл, чтобы ввести в него дату/другую информацию.
+*.манифест
+*.spec
+
+# Журналы установщика
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Отчеты о модульном тестировании / покрытии
+htmlcov/
+.токсины/
+.nox/
+.покрытие
+.покрытие.*
+.кэш
+nosetests.xml
+coverage.xml
+*.обложка
+*.py,обложка
+гипотеза/
+.pytest_cache/
+крышка/
+
+# Переводы
+*.мо
+*.горшок
+
+# Вещи Джанго:
+*.журнал
+local_settings.py
+db.sqlite3
+db.sqlite3-журнал
+
+# Фляжка всякая:
+пример/
+.webassets-кэш
+
+# Лоскутная штука:
+.скрэпи
+
+# Документация Сфинкса
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+цель/
+
+# Блокнот Юпитера
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+# Для библиотеки или пакета вы можете проигнорировать эти файлы, так как код
+# предназначен для работы в нескольких средах; в противном случае проверьте их:
+# .python-версия
+
+# pipenv
+# Согласно pypa/pipenv#598, рекомендуется включить Pipfile.блокировка управления версиями.
+# Тем не менее, в случае совместной работы, если имеются зависящие от платформы зависимости или зависимости
+# не имея кросс-платформенной поддержки, pipenv может устанавливать зависимости, которые не работают или не работают
+#   install all needed dependencies.
+#Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.венв
+env/
+венв/
+ENV/
+env.bak/
+венв.бак/
+
+# Настройки проекта Spyder
+.spyderproject
+.spyproject
+
+# Настройки проекта Rope
+.ropeproject
+
+# документация mkdocs
+/сайт
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Проверка типа погребального костра
+.погребальный костер/
+
+# статический анализатор типов pytype
+.pytype/
+
+# Символы отладки Cython
+cython_debug/
